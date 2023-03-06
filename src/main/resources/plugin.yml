@@ -1,0 +1,20 @@
+name: GPPersistentTrust
+version: '${project.version}'
+main: adhdmc.gppersistenttrust.GPPersistentTrust
+api-version: 1.19
+depend: [ GriefPrevention ]
+authors: [ Rhythmic, Peashooter101 ]
+description: An Add-On for Grief Prevention adding Persistent Trust Lists
+commands:
+  persistenttrust:
+    description: "Adds a player to your persistent trust with the given permission."
+    usage: "/persistenttrust <player> <trust-type>"
+    aliases: [ "pt", "ptrust" ]
+  persistentuntrust:
+    description: "Removes a player from your persistent trust. Use true on <untrust-all-claims> to denote removing them from all claims."
+    usage: "/persistentuntrust <player> <untrust-all-claims>"
+    aliases: [ "pu", "puntrust" ]
+  persistentlist:
+    description: "List all players that are in your persistent trust list along with their permissions."
+    usage: "/persistentlist"
+    aliases: [ "pl", "plist" ]
